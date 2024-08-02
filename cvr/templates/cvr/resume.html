@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+        .header p {
+            font-size: 13px;
+            margin: 5px 0;
+        }
+        .section-heading {
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        .section-content {
+            font-size: 11px;
+            margin: 10px 0;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>{{user_profile.name}}</h1>
+        <p>{{user_profile.email}} | {{user_profile.phone}}</p>
+    </div>
+    <hr/>
+
+    <div class="section">
+        <hr/>
+        <p class="section-heading">ABOUT</p>
+        <hr/>
+        <p class="section-content">{{user_profile.about}}</p>
+    </div>
+
+    <div class="section">
+        <p class="section-heading">SCHOOL</p>
+        <p class="section-content">{{user_profile.school}}</p>
+    </div>
+
+    <div class="section">
+        <p class="section-heading">COLLEGE</p>
+        <p class="section-content">{{user_profile.college}}</p>
+    </div>
+
+    <div class="section">
+        <hr/>
+        <p class="section-heading">EXPERIENCE</p>
+        <hr/>
+        <p class="section-content">{{user_profile.experience}}</p>
+    </div>
+
+    <div class="section">
+        <hr/>
+        <p class="section-heading">SKILLS</p>
+        <hr/>
+        <p class="section-content">{{user_profile.skills}}</p>
+    </div>
+</body>
+</html>
